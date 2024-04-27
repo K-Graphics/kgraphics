@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(beautiful-wood-background-with-text-space-free-vector.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.log {
+    width: 100px; 
+    height: 100px; 
+    margin-left: 10%; 
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mainhead {
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(80, 41, 4);
+    margin: 30px auto;
+    max-width: 600px; 
+}
+
+.logo {
+    display: flex;
+    justify-content: center; 
+    margin-top: 30px; 
+}
+
+.imgcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.imgcontainer .image {
+    width: calc(33.33% - 20px); 
+    margin: 10px; 
+}
+
+.imgcontainer .image img {
+    width: 100%; 
+    height: auto;
+    transition: all 0.3s ease; /
+}
+
+.imgcontainer .image:hover img {
+    transform: scale(1.1); 
+}
+
+.imgcontainer .image .text {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.imgcontainer .image:hover .text {
+    display: block; 
+}
